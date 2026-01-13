@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Digital | Flexbox Pro </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+    
+           <h1>Você Saudável</h1>
+            <nav class="navbar">
+                <ul>
+                   <a href="#">Artigos                </a>
+                   <a href="#">Calculadoras           </a>
+                   <a href="#" class="btn-destaques">Assinar</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+       
+       
+      
+
+           <article class="imc-box info">
+                 <h2>Por que medir?  </h2>
+                 <p>O IMC ajuda a identificar riscos de doenças como hipertensão e diabetes. É o primeiro passo para uma via consiente.</p>
+                 <ul>
+                        <li>✓ Controle de peso        </li>
+                        <li>✓ Prenvenção de doenças   </li>
+                        <li>✓ Melhore na disposição   </li>
+                 </ul>
+
+           </article>
+
+         </section>
+
+
+           <section class="imc-wrapper">
+            <article class="imc-box calculator">
+                <h2>Cálculo de IMC </h2>
+                <div class="form-group">
+                    <input type="number" id="peso" placeholder="Peso (ex: 80)">
+                    <input type="number" id="altura"  placeholder="Altura (ex.1.80)">
+                    <button onclick="calcular()">Calcular agora</button>
+                </div>
+                <div id="resultado-container" class="hidden">
+                    <p>Seu IMC é: <strong id="valorimc">0</strong></p>
+                    <p id="classificado"></p>
+
+                </div>
+            </article>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
