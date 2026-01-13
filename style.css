@@ -80,7 +80,7 @@ nav a{
 /* Layout Principal com Flexbox Flexível */
 .imc-wraper {
     display: flex;
-    flex-direction: column; /* Padrão Mobile: um abaixo do outro  */
+    flex-direction: row; /* Padrão Mobile: um abaixo do outro  */
     gap: 30px;
     margin-top: 50px;
 }
@@ -90,12 +90,13 @@ nav a{
     padding: 40px;
     border-radius: 15px;
     background: white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 25px rgba(137, 84, 84, 0.05);
 }
 
 main {
     display: flex;
-    justify-content: flex-end;
+    
+    flex-direction: row;
 }
 
 
@@ -105,7 +106,7 @@ main {
 }
 
 .calculator {
-    border-top: 5px solid var(--brand);
+  
 }
 
 /* --- Media Queries (Responsividade de verdade) --- */
