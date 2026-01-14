@@ -35,11 +35,12 @@ body {
 }
 
 header {
-    background-color: rgba(219, 230, 226, 0.399);
+    background-color: rgba(198, 227, 217, 0.399);
     padding: 30px;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
+   
     
 
 }
@@ -78,16 +79,19 @@ nav a{
 }
 
 /* Layout Principal com Flexbox Flexível */
-.imc-wraper {
+.imcwraper {
     display: flex;
-    flex-direction: row; /* Padrão Mobile: um abaixo do outro  */
+   /* Padrão Mobile: um abaixo do outro  */
     gap: 30px;
     margin-top: 50px;
+
 }
 
-.imc-box {
+.imcbox {
     flex: 1; /* Faz com que ambos os boxes ocupem o mesmo espaço */
     padding: 40px;
+    flex-direction: column;
+    
     border-radius: 15px;
     background: white;
     box-shadow: 0 10px 25px rgba(137, 84, 84, 0.05);
@@ -95,19 +99,52 @@ nav a{
 
 main {
     display: flex;
-    
+    justify-content: flex-end;
+    align-items: flex-end;
     flex-direction: row;
+
 }
 
 
  main h2 {
-    color: #55bf9dce;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 29px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #00d1b2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.calculator {
-  
+p {
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
 }
+
+article input  {
+    height: 40px;
+    width: 270px;
+    border: 3px solid #00d1b2;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+::placeholder {
+    font-size: 20px;
+}
+
+article button { 
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #00d1b2;
+    background-color: #00d1b2;
+    color: white;
+
+}
+
+
+
+
 
 /* --- Media Queries (Responsividade de verdade) --- */
 
